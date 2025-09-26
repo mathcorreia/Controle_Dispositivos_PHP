@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta de Acessórios</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Consulta de Acessórios por Dispositivo</h1>
+    </header>
+    <nav>
+        <a href="index.html">Principal</a>
+    </nav>
+    <main>
+        <form id="consultaAcessoriosForm">
+            <label for="numero_dispositivo">Digite o Nº do Dispositivo:</label>
+            <input type="text" id="numero_dispositivo" name="numero_dispositivo" placeholder="Ex: D-12345" required>
+            <button type="submit">Buscar</button>
+        </form>
+        <hr>
+        <h2>Acessórios do Dispositivo</h2>
+        <div id="resultadoAcessorios">
+            <p>Nenhum resultado para exibir.</p>
+        </div>
+    </main>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

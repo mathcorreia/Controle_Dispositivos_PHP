@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manutenção de Dispositivos</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Manutenção de Dispositivos</h1>
+    </header>
+    <nav>
+        <a href="index.html">Principal</a>
+    </nav>
+    <main>
+        <form id="manutencaoForm">
+
+            <label for="codigo_dispositivo">Código do Dispositivo:</label>
+            <input type="text" id="codigo_dispositivo" name="codigo_dispositivo" required placeholder="Insira o código do dispositivo" type="number">
+
+            <label for="numero_dispositivo">Nº do Dispositivo:</label>
+            <input type="text" id="numero_dispositivo" name="numero_dispositivo" required placeholder="Insira o número do dispositivo" type="number">
+
+            <label for="data">Data:</label>
+            <input type="date" id="data" name="data" required placeholder="Insira a data da manutenção" type="date">
+
+            <label for="responsavel">Responsável:</label>
+            <input type="text" id="responsavel" name="responsavel" required placeholder="Insira o nome do responsável pela manutenção" type="text">
+
+            <label for="manutencao_executada">Manutenção Executada:</label>
+            <textarea id="manutencao_executada" name="manutencao_executada" required placeholder="Insira o que foi realizado" type="text"></textarea>
+            
+            <button type="submit">Registrar Manutenção</button>
+        </form>
+    </main>
+</body>
+</html>

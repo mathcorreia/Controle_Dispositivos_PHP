@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta por Local</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Consulta por Local</h1>
+    </header>
+    <nav>
+        <a href="index.html">Pagina Principal</a>
+    </nav>
+    <main>
+        <form id="consultaLocalForm">
+            <label for="localizacao">Digite a Localização:</label>
+            <input type="text" id="localizacao" name="localizacao" placeholder="Ex: Armário 5, Prateleira C" required>
+            <button type="submit">Buscar</button>
+        </form>
+        <hr>
+        <h2>Resultados da Busca</h2>
+        <table id="resultadoLocal">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nº Dispositivo</th>
+                    <th>Tipo Material</th>
+                    <th>Operação</th>
+                    <th>Setor</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td colspan="6">Nenhum resultado para exibir.</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

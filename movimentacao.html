@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movimentação de Dispositivos</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Movimentação de Dispositivos</h1>
+    </header>
+    <nav>
+        <a href="index.html">Principal</a>
+    </nav>
+    <main>
+        <form id="movimentacaoForm">
+
+            <label for="codigo_dispositivo">Código do Dispositivo:</label>
+            <input type="text" id="codigo_dispositivo" name="codigo_dispositivo" required placeholder="1234-1231-1232">
+
+            <label for="data">Data:</label>
+            <input type="date" id="data" name="data" required>
+
+            <label for="horario">Horário:</label>
+            <input type="time" id="horario" name="horario" required>
+
+            <label for="solicitante">Solicitante:</label>
+            <input type="text" id="solicitante" name="solicitante" required>
+
+            <label for="status">Status (Entrada/Saída):</label>
+            <input type="text" id="status" name="status" required>
+            
+            <button type="submit">Registrar Movimentação</button>
+        </form>
+    </main>
+</body>
+</html>

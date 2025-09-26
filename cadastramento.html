@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastramento de Dispositivos</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Cadastramento de Dispositivos</h1>
+    </header>
+    <nav>
+        <a href="index.html">Principal</a>
+    </nav>
+    <main>
+        <form id="cadastramentoForm">
+            <input type="hidden" name="id" id="id">
+            <label for="controle">Controle:</label>
+            <input type="text" id="controle" name="controle">
+            <label for="numero_dispositivo">Nº do Dispositivo:</label>
+            <input type="text" id="numero_dispositivo" name="numero_dispositivo" required>
+            <label for="tipo_material">Tipo de Material:</label>
+            <input type="text" id="tipo_material" name="tipo_material">
+            <label for="revisao">Revisão:</label>
+            <input type="text" id="revisao" name="revisao">
+            <label for="pn">PN:</label>
+            <input type="text" id="pn" name="pn">
+            <label for="localizacao">Localização:</label>
+            <input type="text" id="localizacao" name="localizacao">
+            <label for="operacao">Operação:</label>
+            <input type="text" id="operacao" name="operacao">
+            <label for="setor">Setor:</label>
+            <input type="text" id="setor" name="setor">
+            <label for="status">Status:</label>
+            <input type="text" id="status" name="status">
+            <label for="peso">Peso:</label>
+            <input type="text" id="peso" name="peso">
+            <label for="observacao">Observação:</label>
+            <textarea id="observacao" name="observacao"></textarea>
+            <button type="submit">Salvar</button>
+        </form>
+        <hr>
+        <h2>Dispositivos Cadastrados</h2>
+        <table id="dispositivosTable">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nº Dispositivo</th>
+                    <th>Tipo Material</th>
+                    <th>Localização</th>
+                    <th>Status</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </main>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
