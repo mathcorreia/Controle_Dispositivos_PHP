@@ -17,20 +17,20 @@
         <form id="movimentacaoForm">
 
             <label for="codigo_dispositivo">Código do Dispositivo:</label>
-            <input type="text" id="codigo_dispositivo" name="codigo_dispositivo" required placeholder="1234-1231-1232">
+            <input type="text" id="codigo_dispositivo" name="codigo_dispositivo" required placeholder="1234-1231-1232" type="number">
 
             <label for="data">Data:</label>
-            <input type="date" id="data" name="data" required>
+            <input type="date" id="data" name="data" required placeholder="dd/mm/aaaa" type="date">
 
             <label for="horario">Horário:</label>
-            <input type="time" id="horario" name="horario" required>
+            <input type="time" id="horario" name="horario" required placeholder="hh:mm" type="time">
 
             <label for="solicitante">Solicitante:</label>
-            <input type="text" id="solicitante" name="solicitante" required>
+            <input type="text" id="solicitante" name="solicitante" required placeholder="Nome do solicitante" type="text">
 
             <label for="status">Status (Entrada/Saída):</label>
-            <input type="text" id="status" name="status" required>
-            
+            <input type="text" id="status" name="status" required placeholder="Entrada/Saida" type="text">
+
             <button type="submit">Registrar Movimentação</button>
         </form>
     </main>
